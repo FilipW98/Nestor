@@ -1,0 +1,181 @@
+//@media (max-width: 1599px) { ... }
+//@media (max-width: 1399px) { ... }
+// @media (max-width: 1199px) { ... }
+// @media (max-width: 991px) { ... }
+// @media (max-width: 767px) { ... }
+// @media (max-width: 575px) { ... }
+
+.we-experts {
+   // .we-experts__outer
+
+   &__outer {
+      width: 100%;
+      background-color: var(--black);
+      color: var(--white);
+
+      padding: 88px 50px;
+      margin: -2px 0 120px;
+
+      display: flex;
+      justify-content: center;
+
+      @media (max-width: 1199px) {
+         padding: 78px 40px;
+         margin: -2px 0 70px;
+      }
+      @media (max-width: 991px) {
+         padding: 68px 30px;
+         margin: -2px 0 100px;
+      }
+      @media (max-width: 767px) {
+         padding: 58px 20px;
+         margin: -2px 0 80px;
+      }
+      @media (max-width: 575px) {
+         padding: 48px 16px;
+         margin: -2px 0 70px;
+      }
+   }
+
+   // .we-experts__inner
+
+   &__inner {
+      max-width: 1440px;
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   // .we-experts__top-box
+
+   &__top-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      margin-bottom: 92px;
+      max-width: 1190px;
+      width: 100%;
+
+      // @media (max-width: 1199px) { ... }
+      // @media (max-width: 991px) { ... }
+      @media (max-width: 767px) {
+         flex-direction: column;
+         margin-bottom: 62px;
+      }
+      @media (max-width: 575px) {
+         margin-bottom: 42px;
+      }
+   }
+
+   // .we-experts__heading
+
+   &__heading {
+      max-width: 555px;
+
+      @media (max-width: 767px) {
+         max-width: 415px;
+         margin-bottom: 40px;
+         align-self: flex-start;
+         margin-left: 26px;
+      }
+      @media (max-width: 575px) {
+         max-width: 355px;
+         margin-bottom: 20px;
+         margin-left: 0;
+      }
+   }
+
+   // .we-experts__btn
+
+   &__btn {
+      max-width: 226px;
+      max-height: 72px;
+      width: 100%;
+      height: 100%;
+
+      @media (max-width: 767px) {
+         max-width: 216px;
+         height: 52px;
+         align-self: flex-end;
+         margin-right: 24px;
+      }
+      @media (max-width: 575px) {
+         align-self: center;
+         margin-right: 0;
+      }
+   }
+
+   // .we-experts__link
+
+   &__link {
+      width: 100%;
+      height: 100%;
+   }
+
+   // .we-experts__bottom-box
+
+   &__bottom-box {
+      display: flex;
+      justify-content: center;
+      padding: 70px 0;
+      border-top: 1px solid rgba(255, 255, 252, 0.3);
+      border-bottom: 1px solid rgba(255, 255, 252, 0.3);
+
+      @media (max-width: 1199px) {
+         padding: 50px 0;
+      }
+      @media (max-width: 991px) {
+         padding: 30px 0;
+      }
+      @media (max-width: 767px) {
+         flex-direction: column;
+         padding: 0;
+      }
+      // @media (max-width: 575px) { ... }
+   }
+
+   // .we-experts__info-box
+
+   &__info-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 88px;
+
+      border-right: 1px solid var(--white);
+
+      &:last-child {
+         border-right: none;
+         @media (max-width: 767px) {
+            border-bottom: none;
+         }
+      }
+
+      @media (max-width: 1199px) {
+         padding: 0 58px;
+      }
+      @media (max-width: 991px) {
+         padding: 0 38px;
+      }
+      @media (max-width: 767px) {
+         padding: 20px 0;
+         border-right: none;
+         border-bottom: 1px solid var(--white);
+      }
+      // @media (max-width: 575px) { ... }
+   }
+
+   // .we-experts__info-big
+
+   &__info-big {
+   }
+
+   // .we-experts__info-small
+
+   &__info-small {
+      text-align: center;
+   }
+}
