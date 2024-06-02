@@ -5,7 +5,7 @@
                 <span class="header-desktop__info-icon-container">
                     <?php 
                     $image = get_field('header_info_1_image','option');
-                    $size = array(28,28); // (thumbnail, medium, large, full or custom size)
+                    $size = array(28,28); 
                     if( $image ) {
                         echo wp_get_attachment_image( $image, $size );
                     } 
@@ -19,7 +19,7 @@
                 <span class="header-desktop__info-icon-container">
                     <?php 
                     $image = get_field('header_info_2_image','option');
-                    $size = array(28,28); // (thumbnail, medium, large, full or custom size)
+                    $size = array(28,28);
                     if( $image ) {
                         echo wp_get_attachment_image( $image, $size );
                     } 
