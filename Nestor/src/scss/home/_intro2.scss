@@ -1,0 +1,199 @@
+//@media (max-width: 1599px) { ... }
+//@media (max-width: 1399px) { ... }
+// @media (max-width: 1199px) { ... }
+// @media (max-width: 991px) { ... }
+// @media (max-width: 767px) { ... }
+// @media (max-width: 575px) { ... }
+
+.intro {
+    // .intro__outer
+
+    &__outer {
+        width: 100%;
+        background-color: var(--black);
+
+        display: flex;
+        justify-content: center;
+    }
+
+    // .intro__inner
+
+    &__inner {
+        max-width: 2200px;
+        width: 100%;
+
+        // max-height: 728px;
+        max-height: min(728px, calc(100vh - 150px));
+
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+
+        @media (min-width: 1600px) {
+            // max-height: 928px;
+            max-height: min(928px, calc(100vh - 150px));
+        }
+    }
+
+    // .intro__splide
+
+    // &__splide {}
+
+    // // .intro__track
+
+    // &__track {}
+
+    // // .intro__list
+
+    // &__list {}
+
+    // .intro__bg-image
+
+    &__bg-image {
+        position: relative;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            // max-height: 728px;
+            max-height: min(728px, calc(100vh - 150px));
+
+            @media (min-width: 1600px) {
+                // max-height: 928px;
+                max-height: min(928px, calc(100vh - 150px));
+            }
+
+            @media (max-width: 991px) {
+                min-height: 600px;
+            }
+
+            @media (max-width: 767px) {
+                min-height: 500px;
+            }
+
+            @media (max-width: 575px) {
+                min-height: 400px;
+            }
+        }
+
+        &::after {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(180deg,
+                    rgba(0, 0, 0, 0) 67.85%,
+                    #000 98.92%);
+        }
+    }
+
+    // .intro__text-box
+
+    &__text-box {
+        color: var(--white);
+        // max-width: 1130px;
+        width: 100%;
+        padding: 0 166px 0 140px;
+        //   padding: 0 60px;
+
+        display: flex;
+        justify-content: space-between;
+
+        position: absolute;
+        bottom: 80px;
+        left: auto;
+        right: auto;
+
+        @media (max-width: 1399px) {
+            padding: 0 85px 0 60px;
+        }
+
+        @media (max-width: 1199px) {
+            flex-direction: column;
+        }
+
+        @media (max-width: 991px) {
+            padding: 0 60px;
+        }
+
+        @media (max-width: 767px) {
+            padding: 0 40px;
+            bottom: 60px;
+        }
+
+        @media (max-width: 575px) {
+            padding: 0 16px;
+            bottom: 40px;
+        }
+    }
+
+    // .intro__big-text
+
+    &__big-text {
+        max-width: 718px;
+        margin-right: 40px;
+
+        @media (max-width: 1199px) {
+            margin-right: 0px;
+        }
+
+        @media (max-width: 575px) {
+            max-width: 430px;
+        }
+    }
+
+    // .intro__small-text
+
+    &__small-text {
+        max-width: 313px;
+        padding-top: 18px;
+
+        @media (max-width: 1199px) {
+            align-self: flex-end;
+
+            @media (max-width: 767px) {
+                padding-top: 14px;
+            }
+
+            @media (max-width: 575px) {
+                max-width: 295px;
+                padding-top: 10px;
+                align-self: flex-start;
+            }
+        }
+    }
+}
+
+.splide__pagination {
+    left: auto !important;
+    bottom: 40px !important;
+    right: 40px !important;
+
+    @media (max-width: 767px) {
+        bottom: 30px !important;
+        right: 30px !important;
+    }
+
+    @media (max-width: 575px) {
+        bottom: 20px !important;
+        right: 20px !important;
+    }
+}
+
+// .splide {
+//     // .splide__track
+
+//     // &__track {}
+
+//     // // .splide__list
+
+//     // &__list {}
+
+//     // // .splide__slide
+
+//     // &__slide {}
+// }
