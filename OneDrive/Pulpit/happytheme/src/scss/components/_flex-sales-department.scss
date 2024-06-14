@@ -1,0 +1,82 @@
+.sales-department {
+   background-color: var(--brown);
+   &__outer {
+      max-width: 1440px;
+      margin: 0px auto;
+      padding: 80px 25px 120px 25px;
+      @media(max-width:575px){
+      padding: 32px 25px 32px 25px;
+      }
+      
+   }
+
+   &__inner {
+      max-width: 1440px;
+      color: var(--light-white);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+   &__title {
+      margin-bottom: 48px;
+   }
+
+   &__data {
+      display: flex;
+      max-width: 903px;
+      width: 100%;
+      justify-content: space-evenly;
+      @media (max-width: 767px) {
+         flex-direction: column;
+         align-items: center;
+      }
+
+      &-person {
+         &-name {
+            margin-bottom: 24px;
+         }
+
+         &-mail,
+         &-phone {
+            display: flex;
+            align-items: center;
+            &-text {
+               position: relative;
+               color: var(--light-white);
+            }
+            &-text::after {
+               position: absolute;
+               content: "";
+               left: 0;
+               bottom: -3px;
+               width: 10%;
+               height: 2px;
+               background-color: var(--light-white);
+               transition: 0.3s;
+               border-radius: 20px;
+               @media (max-width: 767px) {
+                  width: 0%;
+               }
+            }
+            &-text:hover::after {
+               width: 100%;
+            }
+            img {
+               margin-right: 8px;
+               width: 24px;
+            }
+         }
+         &-mail {
+            margin-bottom: 16px;
+         }
+      }
+
+      &-person:nth-of-type(1) {
+         margin-right: 20px;
+         @media (max-width: 767px) {
+            margin-right: 0;
+            margin-bottom: 48px;
+         }
+      }
+   }
+}
