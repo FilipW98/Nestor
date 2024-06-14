@@ -1,0 +1,308 @@
+body.body-overflow-hidden {
+    overflow: hidden;
+}
+
+main {
+    overflow: hidden;
+}
+
+.form {
+
+    &__inner {
+        position: relative;
+        width: 100%;
+    }
+
+    &__message-sent {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calc(100% + 1px);
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #F5F5F5f0;
+        z-index: 35;
+        transition: 0.3s linear;
+        padding: 25px;
+        text-align: center;
+
+        opacity: 0;
+        visibility: hidden;
+
+        &-text {
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    &__text-container {
+        &:first-of-type {
+            max-width: 460px;
+            margin-bottom: 15px;
+        }
+
+        &:nth-child(2) {
+            max-width: 310px;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__submit-button {
+        br {
+            display: none;
+        }
+    }
+
+    &__submit-button-inner {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        position: relative;
+        margin-right: auto;
+    }
+
+    &__send {
+        border: unset;
+        background: #400706;
+        color: #F5F5F5;
+        padding: 18px 36px;
+        font-weight: 500;
+        font-size: 18px;
+        display: block;
+        border-radius: 0;
+        transition: 0.2s;
+        font-family: "Inter";
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:disabled {
+            cursor: not-allowed;
+        }
+
+        &:disabled:hover {
+            cursor: not-allowed;
+            transform: scale(1);
+        }
+
+        &:hover {
+            background-color: black;
+            transform: scale(0.95);
+            box-shadow: 0px 4px 8px 0px rgba(64, 7, 6, 0.16);
+        }
+    }
+
+    &__text-container {
+        margin-bottom: 32px;
+    }
+
+    &__accept-text {
+        color: #16181D;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.45;
+    }
+
+    &__input-container.hidden {
+        display: none;
+    }
+
+    &__input-container.not-validated {
+        border-color: #ff3300;
+
+        &::before {
+            content: "";
+            width: 24px;
+            height: 24px;
+            background-image: url('/wp-content/uploads/2024/01/not-validated-1.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            right: 12px;
+            bottom: 12px;
+            z-index: 33;
+        }
+    }
+
+    &__input-container.validated {
+        &::before {
+            content: "";
+            width: 24px;
+            height: 24px;
+            background-image: url('/wp-content/uploads/2024/01/validated-dark.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            right: 12px;
+            bottom: 12px;
+            z-index: 33;
+        }
+    }
+
+    &__input-container {
+        margin-bottom: 26px;
+        position: relative;
+
+        padding: 0;
+
+        &:last-of-type {
+            margin-bottom: 24px;
+        }
+
+        &[data-input-name="text-content"] {
+            border-bottom: unset !important;
+
+
+        }
+
+        input:autofill,
+        input:-webkit-autofill-strong-password,
+        input:-webkit-autofill-strong-password-viewable,
+        input:-webkit-autofill-and-obscured {
+            background-color: transparent;
+            color: #16181D;
+        }
+
+        input:-webkit-autofill,
+        input:-webkit-autofill:focus {
+            background-color: transparent;
+            color: #16181D;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            min-width: 100%;
+            border: 0;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 130%;
+            color: #16181D;
+            background: transparent;
+            font-family: "Inter";
+            min-height: 52px;
+            padding: 10px;
+        }
+
+        textarea {
+            display: block;
+            // height: 75px;
+            resize: vertical;
+            height: 185px;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 130%;
+            color: #16181D;
+            opacity: 1;
+            font-family: "Inter";
+        }
+    }
+
+    &__input-container {
+        .wpcf7-form-control-wrap {
+            width: 100%;
+            display: block;
+            border: 1px solid #B2B2B2;
+        }
+
+        p br {
+            display: none !important;
+        }
+    }
+
+    &__input-container-label {
+        font-weight: 400;
+        line-height: 130%;
+        font-size: 18px;
+        color: #16181D;
+        margin-bottom: 4px;
+        display: block;
+        font-family: "Inter";
+    }
+
+    &__acceptance-text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        color: #16181D;
+        font-family: "Inter";
+    }
+
+    &__spinner {
+        background: transparent;
+        position: absolute;
+        right: -50px;
+        margin: 0;
+        visibility: hidden;
+        width: 40px;
+        opacity: 1;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 40px;
+
+        &::before {
+            content: unset;
+        }
+    }
+}
+
+.wpcf7-spinner:not(.form__spinner) {
+    display: none;
+}
+
+.wpcf7-text:focus,
+.wpcf7-textarea:focus {
+    outline: none;
+}
+
+.wpcf7-not-valid-tip {
+    font-weight: normal;
+    display: block;
+    color: #ff3300;
+    font-weight: 300;
+    padding-top: 15px;
+    position: absolute;
+    font-size: 12px;
+    line-height: 160%;
+    bottom: -20px;
+    z-index: 3;
+}
+
+.wpcf7-response-output {
+    display: none;
+}
+
+.form-image {
+    &__inner {
+        display: flex;
+    }
+
+    &__form-side {
+        max-width: 835px;
+        width: 100%;
+    }
+
+    &__image-side {
+        width: 100%;
+    }
+
+    &__outer {
+        max-width: 2100px;
+        margin: 0 auto;
+    }
+}
