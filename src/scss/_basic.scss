@@ -1,0 +1,519 @@
+@font-face {
+   font-family: "Archivo";
+   font-style: normal;
+   font-weight: 300;
+   src: local(""),
+      url("/wp-content/themes/happytheme/fonts/Archivo-Light.woff2")
+         format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url("/wp-content/themes/happytheme/fonts/Archivo-Light.woff")
+         format("woff");
+   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+   font-family: "Archivo";
+   font-style: normal;
+   font-weight: 400;
+   src: local(""),
+      url("/wp-content/themes/happytheme/fonts/Archivo-Regular.woff2")
+         format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url("/wp-content/themes/happytheme/fonts/Archivo-Regular.woff")
+         format("woff");
+   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+   font-family: "Archivo";
+   font-style: normal;
+   font-weight: 500;
+   src: local(""),
+      url("/wp-content/themes/happytheme/fonts/Archivo-Medium.woff2")
+         format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url("/wp-content/themes/happytheme/fonts/Archivo-Medium.woff")
+         format("woff");
+   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+   font-family: "Archivo";
+   font-style: normal;
+   font-weight: 700;
+   src: local(""),
+      url("/wp-content/themes/happytheme/fonts/Archivo-Bold.woff2")
+         format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url("/wp-content/themes/happytheme/fonts/Archivo-Bold.woff")
+         format("woff");
+   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+   font-family: "DMSans";
+   font-style: normal;
+   font-weight: 300;
+   src: local(""),
+      url("/wp-content/themes/happytheme/fonts/DMSans-Light.woff2")
+         format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url("/wp-content/themes/happytheme/fonts/DMSans-Light.woff")
+         format("woff");
+   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+   font-family: "DMSans";
+   font-style: normal;
+   font-weight: 500;
+   src: local(""),
+      url("/wp-content/themes/happytheme/fonts/DMSans-Medium.woff2")
+         format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url("/wp-content/themes/happytheme/fonts/DMSans-Medium.woff")
+         format("woff");
+   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+   font-family: "DMSans";
+   font-style: normal;
+   font-weight: 600;
+   src: local(""),
+      url("/wp-content/themes/happytheme/fonts/DMSans-SemiBold.woff2")
+         format("woff2"),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url("/wp-content/themes/happytheme/fonts/DMSans-SemiBold.woff")
+         format("woff");
+   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+// zmienne
+
+:root {
+   --brown: #7a0825;
+   --dark-brown: #540b0e;
+   --white: #fffffc;
+   --black: #000;
+   --black-text: #16181d;
+}
+
+html {
+   //color: var(--dark-green);
+   color: var(--black-text);
+   font-family: "DMSans";
+   font-style: normal;
+}
+
+body {
+   font-family: "DMSans";
+   font-style: normal;
+}
+
+// koniec zmiennych
+
+//Tutaj beda mixiny
+
+@mixin display {
+   font-family: "Archivo";
+   font-size: 69px;
+   font-size: clamp(69px, 7.5vw, 69px);
+   font-style: normal;
+   font-weight: 500;
+   line-height: 120%; /* 82.8px */
+
+   @media (min-width: 992px) and (max-width: 1199px) {
+      font-size: clamp(60px, 6vw, 69px);
+   }
+
+   @media (min-width: 768px) and (max-width: 991px) {
+      font-size: clamp(55px, 6vw, 69px);
+   }
+
+   @media (min-width: 576px) and (max-width: 768px) {
+      font-size: clamp(50px, 5.5vw, 69px);
+   }
+
+   @media (max-width: 575px) {
+      font-size: clamp(32px, 5.5vw, 69px);
+   }
+}
+
+@mixin h1 {
+   font-family: "Archivo";
+   font-size: 56px;
+   font-size: clamp(56px, 9.5vw, 56px);
+   font-style: normal;
+   font-weight: 500;
+   line-height: 120%; /* 67.2px */
+
+   @media (min-width: 992px) and (max-width: 1199px) {
+      font-size: clamp(46px, 6vw, 56px);
+   }
+
+   @media (min-width: 768px) and (max-width: 991px) {
+      font-size: clamp(38px, 6vw, 56px);
+   }
+
+   @media (min-width: 576px) and (max-width: 768px) {
+      font-size: clamp(32px, 5.5vw, 56px);
+   }
+
+   @media (max-width: 575px) {
+      font-size: clamp(28px, 5.5vw, 56px);
+   }
+}
+
+@mixin h2 {
+   font-family: "Archivo";
+   font-size: 48px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 130%; /* 62.4px */
+
+   @media (min-width: 992px) and (max-width: 1199px) {
+      font-size: 42px;
+   }
+
+   @media (min-width: 768px) and (max-width: 991px) {
+      font-size: 36px;
+   }
+
+   @media (min-width: 576px) and (max-width: 768px) {
+      font-size: 30px;
+   }
+
+   @media (max-width: 575px) {
+      font-size: 26px;
+   }
+}
+
+@mixin h3 {
+   font-family: "Archivo";
+   font-size: 32px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 130%; /* 41.6px */
+
+   @media (min-width: 992px) and (max-width: 1199px) {
+      font-size: 28px;
+   }
+
+   @media (min-width: 768px) and (max-width: 991px) {
+      font-size: 26px;
+   }
+
+   @media (min-width: 576px) and (max-width: 768px) {
+      font-size: 24px;
+   }
+
+   @media (max-width: 575px) {
+      font-size: 22px;
+   }
+}
+
+@mixin h4 {
+   font-family: "Archivo";
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 300;
+   line-height: 120%; /* 28.8px */
+   letter-spacing: 0.24px;
+
+   // @media (min-width: 992px) and (max-width: 1199px) {
+   //    font-size: 67px;
+   // }
+
+   @media (min-width: 768px) and (max-width: 991px) {
+      font-size: 22px;
+   }
+
+   @media (min-width: 576px) and (max-width: 768px) {
+      font-size: 20px;
+   }
+
+   @media (max-width: 575px) {
+      font-size: 18px;
+   }
+}
+
+@mixin h5 {
+   font-family: "Archivo";
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 120%; /* 28.8px */
+   letter-spacing: 0.24px;
+   text-transform: uppercase;
+
+   // @media (min-width: 992px) and (max-width: 1199px) {
+   //    font-size: 67px;
+   // }
+
+   @media (min-width: 768px) and (max-width: 991px) {
+      font-size: 22px;
+   }
+
+   @media (min-width: 576px) and (max-width: 768px) {
+      font-size: 20px;
+   }
+
+   @media (max-width: 575px) {
+      font-size: 18px;
+   }
+}
+
+@mixin h6 {
+   font-family: "Archivo";
+   font-size: 24px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 130%; /* 31.2px */
+
+   @media (max-width: 767px) {
+      font-size: 20px;
+   }
+   @media (max-width: 575px) {
+      font-size: 18px;
+   }
+}
+
+@mixin bodytext-20-medium {
+   font-family: "Archivo";
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 120%; /* 24px */
+   letter-spacing: 0.2px;
+   text-transform: uppercase;
+
+   @media (max-width: 991px) {
+      font-size: 18px;
+   }
+   // @media (max-width: 767px) { ... }
+   @media (max-width: 575px) {
+      font-size: 16px;
+   }
+}
+
+@mixin bodytext-20-regular {
+   font-family: "DMSans";
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 140%; /* 28px */
+   letter-spacing: 0.2px;
+
+   @media (max-width: 991px) {
+      font-size: 18px;
+   }
+   // @media (max-width: 767px) { ... }
+   @media (max-width: 575px) {
+      font-size: 16px;
+   }
+}
+
+@mixin bodytext-18-medium {
+   font-family: "Archivo";
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 130%; /* 23.4px */
+}
+
+@mixin bodytext-18-regular {
+   font-family: "Archivo";
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 160%; /* 28.8px */
+   text-transform: uppercase;
+
+   @media (max-width: 991px) {
+      font-size: 16px;
+   }
+   // @media (max-width: 767px) { ... }
+   @media (max-width: 575px) {
+      font-size: 14px;
+   }
+}
+
+@mixin bodytext-18-light {
+   font-family: "Archivo";
+   font-size: 18px;
+   font-style: normal;
+   font-weight: 300;
+   line-height: 120%; /* 21.6px */
+   letter-spacing: 0.18px;
+
+   @media (max-width: 991px) {
+      font-size: 16px;
+   }
+   // @media (max-width: 767px) { ... }
+   @media (max-width: 575px) {
+      font-size: 14px;
+   }
+}
+
+@mixin bodytext-16-bold {
+   font-family: "Archivo";
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 160%; /* 25.6px */
+   letter-spacing: 0.16px;
+   text-transform: uppercase;
+}
+
+@mixin bodytext-16-regular1 {
+   font-family: "DMSans";
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 160%; /* 25.6px */
+   letter-spacing: 0.16px;
+   text-transform: uppercase;
+
+   @media (max-width: 575px) {
+      font-size: 14px;
+   }
+}
+
+@mixin bodytext-16-regular2 {
+   font-family: "DMSans";
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 160%; /* 25.6px */
+   letter-spacing: 0.16px;
+
+   @media (max-width: 575px) {
+      font-size: 14px;
+   }
+}
+
+@mixin bodytext-14-bold {
+   font-family: "DMSans";
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 120%; /* 16.8px */
+   letter-spacing: 0.28px;
+}
+
+@mixin bodytext-14-regular {
+   font-family: "DMSans";
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 120%; /* 16.8px */
+   letter-spacing: 0.28px;
+}
+
+@mixin button-brown {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 6px 18px;
+   color: var(--white);
+   background-color: var(--brown);
+   border: 1px var(--brown) solid;
+   transition: 0.4s ease;
+
+   &:hover {
+      color: var(--black);
+      background-color: var(--white);
+   }
+}
+
+// Koniec mixin
+// .grecaptcha-badge {
+//    opacity: 0;
+//    visibility: hidden;
+// }
+
+//Klasy na podstawie Mixin
+.color-black-text {
+   color: var(--black-text);
+}
+
+.color-white {
+   color: var(--white);
+}
+
+.display {
+   @include display;
+}
+
+.h1 {
+   @include h1;
+}
+
+.h2 {
+   @include h2;
+}
+
+.h3 {
+   @include h3;
+}
+
+.h4 {
+   @include h4;
+}
+
+.h5 {
+   @include h5;
+}
+
+.h6 {
+   @include h6;
+}
+
+.bodytext-20-medium {
+   @include bodytext-20-medium;
+}
+
+.bodytext-20-regular {
+   @include bodytext-20-regular;
+}
+
+.bodytext-18-medium {
+   @include bodytext-18-medium;
+}
+
+.bodytext-18-regular {
+   @include bodytext-18-regular;
+}
+
+.bodytext-18-light {
+   @include bodytext-18-light;
+}
+
+.bodytext-16-bold {
+   @include bodytext-16-bold;
+}
+
+.bodytext-16-regular1 {
+   @include bodytext-16-regular1;
+}
+
+.bodytext-16-regular2 {
+   @include bodytext-16-regular2;
+}
+
+.bodytext-14-bold {
+   @include bodytext-14-bold;
+}
+
+.bodytext-14-regular {
+   @include bodytext-14-regular;
+}
+
+.button-brown {
+   @include button-brown;
+}
+
+main.home {
+   overflow-x: hidden;
+}
