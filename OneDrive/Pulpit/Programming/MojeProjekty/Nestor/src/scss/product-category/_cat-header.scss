@@ -1,0 +1,44 @@
+.cat-header {
+    // background-color: red;
+    // .cat-header__outer
+
+    &__outer {
+        width: 100%;
+    }
+
+    // .cat-header__inner
+
+    &__inner {
+        width: 100%;
+        max-width: 1410px;
+        padding: 0 25px;
+        margin: 0 auto;
+
+    }
+
+    // .cat-header__text-block
+
+    &__text-block {
+        display: flex;
+        flex-direction: column;
+        max-width: 512px;
+
+        // .cat-header__text-block-headline
+
+        &-headline {
+            width: 100%;
+            color: var(--black);
+            display: block;
+            margin-bottom: 16px;
+        }
+
+        // .cat-header__text-block-desc
+
+        &-desc {
+            color: var(--black);
+
+        }
+    }
+
+
+}

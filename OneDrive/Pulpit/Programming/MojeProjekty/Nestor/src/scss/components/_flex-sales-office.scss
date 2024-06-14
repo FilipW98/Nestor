@@ -1,0 +1,147 @@
+.sales-office {
+   background-color: var(--background-dark);
+   &__outer {
+      display: flex;
+      justify-content: center;
+      max-width: 1440px;
+      margin: 0px auto;
+      padding: 0px 0px 80px;
+      @media(max-width:450px){
+         padding: 0px;
+
+      }
+   }
+   .page-id-100 &__outer {
+      padding: 80px 0px 80px;
+      @media (max-width: 450px) {
+         padding: 32px 0px 0px;
+      }
+   }
+   &__inner {
+      max-width: 1440px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      color: var(--light-white);
+   }
+   .page-id-100.underline {
+      display: none;
+      @media (max-width: 991px) {
+         display: block;
+      }
+   }
+   .underline {
+      height: 1px;
+      width: 100%;
+      background-color: var(--line);
+      margin-bottom: 97px;
+
+      @media (max-width: 991px){
+      margin-bottom: 32px;
+
+      }
+   }
+
+   &__title {
+      margin-bottom: 48px;
+      @media (max-width: 991px) {
+         margin-bottom: 32px;
+      }
+   }
+
+   &__contact {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 32px;
+      width: 100%;
+      margin-left: 10px;
+      @media (max-width: 991px) {
+         flex-direction: column;
+         align-items: center;
+         margin-left: 0;
+      }
+
+      .location-box,
+      .phone-box,
+      .mail-box {
+         position: relative;
+         &__text {
+            color: var(--light-white);
+         }
+      }
+
+      &-item {
+         display: flex;
+         align-items: center;
+         padding: 18px 36px;
+         img {
+            margin-right: 8px;
+         }
+         @media (max-width: 991px) {
+            padding: 8px 0px;
+         }
+      }
+      .mail-box:hover {
+         transform: scale(0.9);
+      }
+      .mail-box {
+         padding: 12px;
+         transition: 0.3s;
+         @media (max-width: 991px) {
+            padding: 12px 28px;
+         }
+      }
+      .phone-box {
+         font-family: "Inter";
+         font-size: 22px;
+         background-color: var(--brown);
+         padding: 18px 30px 18px 16px;
+         display: flex;
+         justify-content: center;
+         width: 277px;
+         transition: 0.3s;
+
+         @media (max-width: 991px) {
+            font-size: 20px;
+            margin: 24px 0px;
+            padding: 12px 28px;
+            width: auto;
+         }
+         img {
+            margin-right: 12px;
+            width: 21px;
+         }
+      }
+      .phone-box:hover {
+         transform: scale(0.9);
+      }
+
+      .location-box {
+         display: flex;
+         align-items: flex-start;
+         max-width: 295px;
+         transition: 0.3s;
+         @media (max-width: 991px) {
+            max-width: 100%;
+         }
+         @media (max-width: 450px) {
+            max-width: 204px;
+            align-items: flex-start;
+         }
+
+         &:hover {
+            transform: scale(0.9);
+         }
+      }
+   }
+
+   &__hours {
+      &-title {
+         margin-bottom: 24px;
+      }
+
+      @media (max-width: 450px) {
+         display: none;
+      }
+   }
+}
