@@ -7,4 +7,4 @@
 </div>
 
 
-## <div align="center" ><a href="http://serwer281383.lh.pl/autoinstalator/serwer281383.lh.pl/wordpress70159/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/FilipW98/Nestor/master/live-icon.png" alt="live icon" width="90" height="50"/> </a>  </div>
+## <div align="center" ><a href="http://serwer281383.lh.pl/autoinstalator/serwer281383.lh.pl/wordpress70159/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/FilipW98/Nestor/master/live-icon.png" alt="live icon" width="100" height="50"/> </a>  </div>
