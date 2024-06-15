@@ -1,1 +1,1 @@
-## <div align="center" ><a href="http://serwer281383.lh.pl/autoinstalator/serwer281383.lh.pl/wordpress70159/" target="_blank" rel="noreferrer"> <img src="./src/assets/img/live-icon.png" alt="live icon" width="80" height="40"/> </a>  </div>
+## <div align="center" ><a href="http://serwer281383.lh.pl/autoinstalator/serwer281383.lh.pl/wordpress70159/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/FilipW98/Nestor/master/live-icon.png" alt="live icon" width="80" height="40"/> </a>  </div>
