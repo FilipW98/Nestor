@@ -3,7 +3,7 @@
 </div>
 
 <div align="center"> 
- Nestor is a web page build on Wordpress with Advanced Custom Fields. I build this page based on Figma mockup. This is one of many projects I created working in Happy Island company. 
+ Nestor is a web page build on Wordpress with Advanced Custom Fields. I build this page based on Figma mockup. This is one of many projects I created working in Happy Island company. For the purpose of presenting the project, sensitive customer data has been replaced.
 </div>
 
 
